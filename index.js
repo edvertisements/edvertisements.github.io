@@ -7,7 +7,7 @@
   out$.install_edvertisements_feed = install_edvertisements_feed = function(){
     var url;
     if ((typeof chrome != 'undefined' && chrome !== null) && chrome.webstore != null && chrome.webstore.install != null) {
-      return chrome.webstore.install(url = 'https://chrome.google.com/webstore/detail/ebmjdfhplinmlajmdcmhkikideknlgkf');
+      return chrome.webstore.install(url = 'https://chrome.google.com/webstore/detail/hccgihpfbdppifbnnlcgllbominjfgak');
     } else {
       return alert('Please visit this page with Google Chrome to install the extension');
     }
