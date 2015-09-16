@@ -5,7 +5,12 @@
     return alert('Coming soon (paper is undergoing review but extension is not anonymized)');
   };
   out$.install_edvertisements_feed = install_edvertisements_feed = function(){
-    return alert('Coming soon (paper is undergoing review but extension is not anonymized)');
+    var url;
+    if ((typeof chrome != 'undefined' && chrome !== null) && chrome.webstore != null && chrome.webstore.install != null) {
+      return chrome.webstore.install(url = 'https://chrome.google.com/webstore/detail/ebmjdfhplinmlajmdcmhkikideknlgkf');
+    } else {
+      return alert('Please visit this page with Google Chrome to install the extension');
+    }
   };
   out$.download_source = download_source = function(){
     return alert('Coming soon (paper is undergoing review but source code is not anonymized)');
